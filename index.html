@@ -11,33 +11,36 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <h1 class="title-major" style="color: rgba(31, 34, 33, 0.767);">Hello!</h1>
-                <h2 class="title-major__text">My name is Artem Svetilov. Nice to meet you!</h2>
-                <img src="img/photo.jpg" alt="" class="photo" width="230px" height="350px">
+                <h2 class="title-major" style="color: rgba(31, 34, 33, 0.767);">Hello!</h1>
+                <h1 class="title-major__text">I'm Artem Svetilov. Nice to meet you!</h2>
+                <img src="img/photo.jpg" alt="" class="photo">
             </div>
             
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-list__item"><a href='#' class="nav-link">About me</a></li>
-                    <li class="nav-list__item"><a href='#' class="nav-link">Skills</a></li>
-                    <li class="nav-list__item"><a href='#' class="nav-link">Education</a></li>
-                    <li class="nav-list__item"><a href='#' class="nav-link">Projects</a></li>
-                    <li class="nav-list__item"><a href='#' class="nav-link">Contacts</a></li>
+                    <li class="nav-list__item"><a href='#aboutMe' class="nav-link">About me</a></li>
+                    <li class="nav-list__item"><a href='#skills' class="nav-link">Skills</a></li>
+                    <li class="nav-list__item"><a href='#ed' class="nav-link">Education</a></li>
+                    <li class="nav-list__item"><a href='#projects' class="nav-link">Projects</a></li>
+                    <li class="nav-list__item"><a href='#contacts' class="nav-link">Contacts</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
     <main>
-        <section class="section section-about">
+        <section class="section section-about" id="aboutMe">
             <div class="container">
                 <h2 class="section-about__title section-title">About me</h2>
-                I finished my study in BNTU and got construction engineer specialization at 2015. I have started my career on public enterprise "Goravtomost" and I continue to work there. Through the position of manager I've got organization, analyst skills, and a lot of soft skills.
+                <p class="section-about__text">
+                    I finished my study in BNTU and got construction engineer specialization at 2015. I have started my career on public enterprise "Goravtomost" and I continue to work there. Through the position of manager I've got organization, analyst skills, and a lot of soft skills.
                 However, 10 month ago I was interested in programming basic and site construction. I began to learn this themes very active and finished few useful free programming courses.
-                I don't have the industry programming experience, but I try to make up for it with quality education and initiative. I understand that a self-education is very important part of my study. Also I have plans to get high IT-education in BSU. 
+                I don't have the industry programming experience, but I try to make up for it with quality education and initiative. I understand that a self-education is very important part of my study. Also I have plans to get high IT-education in BSU.
+                </p>
+                
             </div>
         </section>
-        <section class="section section-skills">
+        <section class="section section-skills" id="skills">
             <div class="container">
                 <h2 class="section-skills__title section-title">Skills</h2>
                 <ul class="section-skills__list">
@@ -53,6 +56,7 @@
                         <img src="img/git.svg" alt="Git" class="skills-img">
                         <div class="section-skills__item-content">Git basic</div>
                     </li>
+                    
                     <li class="section-skills__item">
                         <img src="img/js.svg" alt="JS" class="skills-img">
                         <div class="section-skills__item-content">JS basic</div>
@@ -61,19 +65,23 @@
                         <img src="img/vscode.svg" alt="VScode" class="skills-img">
                         <div class="section-skills__item-content">VScode</div>
                     </li>
+                    <li class="section-skills__item">
+                        <img src="img/english.svg" alt="english" class="skills-img">
+                        <div class="section-skills__item-content">Pre-intermediate</div>
+                    </li>
                 </ul>
                 <div class="section-skills__began"></div>
             </div>
             
         </section>
 
-        <section class="section section-ed">
+        <section class="section section-ed" id="ed">
             <div class="container">
                 <h2 class="section-ed__title section-title">Education</h2>
                 <div class="section-ed__cont">
                     <div class="section-ed__un">
                         <div class="section-ed__item">
-                            <a href="#" class="section-ed__item-link">
+                            <a href="https://bntu.by/en" class="section-ed__item-link">
                                 <h3 class="section-ed__univer">Belarusian national technical university</h3> 
                                 <p class="section-ed__spec">Bridges, Transport Tunnels and Subways</p>
                                 <p class="section-ed__year">2010 - 2015, Engineer</p>
@@ -84,7 +92,7 @@
                     </div>
                     <div class="section-ed__un">
                         <div class="section-ed__item">
-                            <a href="#" class="section-ed__item-link">
+                            <a href="https://www.pac.by/" class="section-ed__item-link">
                                 <h3 class="section-ed__univer">Academy of public administration under the President of the Republic of Belarus</h3> 
                                 <p class="section-ed__spec">Investment project management in public-private partnerships (Master program)</p>
                                 <p class="section-ed__year">2018 - 2020, Master of Manegement</p>
@@ -95,7 +103,7 @@
                     </div>
                     <div class="section-ed__un">
                         <div class="section-ed__item">
-                            <a href="#" class="section-ed__item-link">
+                            <a href="https://skillbox.ru/course/profession-fullstack-python/" class="section-ed__item-link">
                                 <h3 class="section-ed__univer">Skillbox</h3> 
                                 <p class="section-ed__spec">Fullstack-developer</p>
                                 <p class="section-ed__year">2021 - 2022</p>
@@ -109,64 +117,64 @@
             </div>
             
         </section>
-        <section class="section section-projects">
+        <section class="section section-projects" id="projects">
             <div class="container">
-                <h2 class="section-projects__title section-title">Projects</h2>
-                <ul class="section-projects__list">
-                    <li class="section-projects__item">
-                        <div class="section-projects__item-first">
-                            <a href="" class="section-projects__item-first-link"></a>
-                        </div>
-                    </li>
-                    <li class="section-projects__item">
-                        <div class="section-projects__item-first">
-                            <a href="" class="section-projects__item-first-link"></a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                <h2 class="section-projects__title section-title">My projects and code example</h2>
+                <div id="slider-wrapper">
+                    <div class="slider-img">
+                        <a href="" class="slider-link"><img src="" alt="" id="slide-image" class="slide-image"></a>
+                    </div>
+                    <div class="btn-controls">
+                        <button class="btn btn-left"> < PREV </button>
+                        <button class="btn btn-right"> NEXT > </button>
+                    </div>
+                    
+                </div>
 
-        <section class="section section-code">
-            <div class="container">
-                <h2 class="section-code__title section-title">Code example</h2>
                 <div class="section-code__task">
                     <p class="section-code__task-name"> Ones and Zeros from Codewars:</p>
                     Given an array of ones and zeroes, convert the equivalent binary value to an integer.
                     
                     Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.</div>
-                <code class="code">const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);</code>
+                    <code class="code">const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);</code>
+                </div>
             </div>
         </section>
 
-        <section class="section section-contacts">
-            <div class="container">
-                <h2 class="section-contacts__title section-title">
-                    Contacts
-                </h2>
-                <ul class="section-contacts__list">
-                    <li class="section-contacts__item">
-                        <span class="section-contacts__phone">Phone:</span>
-                        <a href="tel:+375296070659" class="section-contacts__tel-link">+375296070659</a>
-                    </li>
-                    <li class="section-contacts__item">
-                        <span class="section-contacts__email">E-mail:</span>
-                        <a href="mailto:Svetilov.art@gmail.com" class="section-contacts__email-link">Svetilov.art@gmail.com</a>
-                    </li>
-                    <li class="section-contacts__item">Telegram: @Svetilov_Artem</li>
-                </ul>
-            </div>
-        </section>
+        
 
         <footer class="footer">
             <div class="container footer-container">
-                <span class="footer-text">Created in<br/> 2021</span>
-                <a href = 'https://github.com/SvetilovArtem/rsschool-cv' class="footer-icon">
-                    <img src="img/github.svg" alt="github" class="footer-icon">
+                <div class="footer-content">
+                    
+                    <span class="footer-text">Created in 2021</span>
+                </div>
+                
+                <ul class="section-contacts__list" id="contacts">
+                    <li class="section-contacts__item">
+                        
+                        <a href="tel:+375296070659" class="section-contacts__link"><span class="section-contacts__phone"><img src="img/phone.svg" class="icon-cont"></span>+375296070659</a>
+                    </li>
+                    <li class="section-contacts__item">
+                        
+                        <a href="mailto:Svetilov.art@gmail.com" class="section-contacts__link"><span class="section-contacts__email"><img src="img/mail.svg" class="icon-cont"></span>Svetilov.art@gmail.com</a>
+                    </li>
+                    
+                    <li class="section-contacts__item"> <a href="#" class="section-contacts__link"><img src="img/telegram.svg" class="icon-cont">@Svetilov_Artem</a></li>
+                    <li class="section-contacts__item">
+                        <a href = 'https://github.com/SvetilovArtem/rsschool-cv' class="section-contacts__link">
+                            <img src="img/github.svg" alt="github" class="icon-cont"><span>SvetilovArtem</span> 
+                        </a>
+                        
+                    </li>
+                </ul>
+                <a href="https://rs.school/js/" class="rs-logo">
+                    <img src="img/rs_school_js.svg" class="rs-logo-img">
                 </a>
             </div>
         </footer>
     </main>
-    
+    <script src="js/sliderFunc.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
