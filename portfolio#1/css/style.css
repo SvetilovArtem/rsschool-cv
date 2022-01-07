@@ -81,6 +81,7 @@ h1, h2, h3 {
 .section-container__text {
     font-size: 20px;
     line-height: 40px;
+    margin-bottom: 25px;
 }
 
 .section-skills__list {
@@ -321,7 +322,6 @@ h1, h2, h3 {
 ::-webkit-input-placeholder { /* Chrome */ color: rgba(189, 174, 130, 1); };
 
 .btn {
-    color: 
 };
 
 /*footer*/
