@@ -30,6 +30,7 @@ ul {
 a {
     text-decoration: none;
 }
+
 .photo {
     width: 230px;
     height: 350px;
@@ -38,6 +39,8 @@ a {
     max-width: 1440px;
     padding-left: 80px;
     padding-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .section {
     margin-bottom: 50px;
@@ -86,7 +89,7 @@ a {
     color: #fff;
     
 }
-.header-content {
+.header {
     margin-bottom: 50px;
 }
 .nav {
@@ -95,13 +98,9 @@ a {
 }
 .nav-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
-.nav-list__item {
-    margin-right: 100px;
-    
-    
-}
+
 .nav-link {
     position: relative;
     text-decoration: none;
@@ -269,3 +268,107 @@ a {
 }
 
 
+@media (max-width: 1120px) {
+    .title-major {
+        font-size: 100px;
+    }
+    .title-major__text {
+        font-size: 37px;
+    }
+    .photo {
+        width: 115px;
+        height: 175px;
+    }
+    .skills-img {
+        width: 75px;
+        height: 75px;
+    }
+    .section-about__text {
+        font-size: 12px;
+    }
+    .section-skills__item:not(:last-child) {
+        margin-right: 30px;
+    }
+    .section-ed__item {
+        width: 150px;
+    }
+    html {
+        font-size: 12px;
+    }
+    .slide-image {
+        width: 250px;
+        height: 170px;
+    }
+    .rs-logo {
+        width: 120px;
+        height: 35px;
+    }
+}
+@media (max-width: 645px) {
+    .title-major__text {
+        font-size: 14px;
+    }
+    .section-ed__univer {
+        font-size: 9px;
+    }
+    .section-ed__spec {
+        font-size: 9px;
+    }
+    .section-ed__year {
+        font-size: 9px;
+    }
+    .title-major {
+        margin-right: 20px;
+        font-size: 24px;
+    }
+    .nav-link {
+        font-size: 10px;
+    }
+    .nav {
+        margin-bottom: 15px;
+    }
+    .section-title {
+        margin-bottom: 15px;
+    }
+    .section {
+        margin-bottom: 15px;
+    }
+    .section-ed__item {
+        max-width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        margin-right: 7px;
+    }
+    .section-ed__cont {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .photo {
+        width: 50px;
+        height: 60px;
+    }
+    
+    .section-title {
+        font-size: 12px;
+    }
+    .section-about__text {
+        font-size: 10px;
+    }
+    .slide-image {
+        width: 90px;
+        height: 50px;
+    }
+    .section-contacts__link {
+        font-size: 9px;
+    }
+    .section-contacts__list {
+        margin-right: 7px;
+    }
+}
+
+@media (max-width: 410px) {
+    .title-major {
+        display: none;
+    }
+}
