@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 .container {
-    width: 1440px;
+    max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 20px;
@@ -246,11 +246,10 @@ h1, h2, h3 {
     left: 45%;
     top: 50%;
     cursor: pointer;
+    transition: .3s ease;
     
 }
-.section-video__link {
-    transition: .3s ease;
-}
+
 .section-video__link:hover svg path {
     fill: #bdae82;
 }
@@ -266,7 +265,7 @@ h1, h2, h3 {
     outline: 3px solid #BDAE82;
     padding: 43px 113px;
     text-align: center;
-    width: 450px;
+    
 }
 .section-price__item-price {
     color: #BDAE82;
@@ -354,6 +353,8 @@ h1, h2, h3 {
     font-size: 20px;
     line-height: 40px;
     margin-bottom: 30px;
+    resize: none;
+    font-family: 'Inter';
 }
 .section-contact__title {
     font-family: 'Merriweather';
