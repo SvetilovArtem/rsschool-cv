@@ -1,0 +1,161 @@
+
+.video-wrapper {
+    max-width: 720px;
+    padding: 25px 20px 20px 25px;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-color: rgba(27, 234, 217, 0.5);
+    box-shadow: 0 0 8px 8px white inset;
+}
+.video-container {
+    text-align: center;
+    max-width: 720px;
+}
+.video-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.video-controls__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-controls__speed {
+    background-color: rgba(27, 234, 217, 0.5);
+    border-radius: 20px;
+    border: transparent;
+    cursor: pointer;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: .3s ease all;
+    
+}
+.playBtn {
+    margin-right: 20px; 
+}
+.playIcon {
+    display: block;
+}
+.pauseIcon {
+    display: none;
+}
+
+.playBtn.active .pauseIcon{
+    display: block;
+}
+.playBtn.active .playIcon{
+    display: none;
+}
+.playBtn:hover path {
+    fill: rgb(6, 223, 151);
+}
+.volumeIcon {
+    display: block;
+    
+}
+.volumeIcon:hover  path {
+    fill: rgb(6, 223, 151);
+}
+.muteIcon:hover  path {
+    fill: rgb(6, 223, 151);
+}
+.muteIcon {
+    display: none;
+    
+}
+.video-controls__mute.active .muteIcon {
+    display: block;
+}
+.video-controls__mute.active .volumeIcon {
+    display: none;
+}
+
+.video-controls__current-time {
+    font-family: sans-serif;
+    font-size: 14px;
+    
+}
+.video-controls__duration {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.video-controls__speed {
+    font-family: sans-serif;
+    margin-right: 20px;
+}
+
+.video-controls__duration {
+    margin-right: 20px;
+}
+.video-controls__volume {
+    margin-right: 20px;
+}
+.time {
+    display: flex;
+    align-items: center;
+    
+    
+}
+.video-controls__element-progress {
+    margin-right: 5px;
+    -webkit-appearance: none;
+    border: 1px solid #c5c5c5;
+    border-radius: 20px;
+    height: 7px;
+    outline: none;
+    background: -webkit-linear-gradient(left, rgba(42, 192, 179, 0.8) 0%);
+}
+.video-controls__element-progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #b3b3b3;
+    width: 18px;
+    height: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease;
+} 
+.video-controls__element-progress::-webkit-slider-thumb:hover {
+    width: 22px;
+    height: 22px;
+    background: rgb(6, 223, 151);
+}
+.video-progress {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 5px;
+    transition: .3s;
+    background: black;
+    cursor: pointer;
+}
+.video-progress__filled {
+    width: 0;
+    background: rgb(6, 223, 151);
+}
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.github-link {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+.github-link:hover {
+    color: rgb(6, 223, 151);
+}
+.rsschool-link svg {
+    width: 50px;
+    height: 50px;
+}
