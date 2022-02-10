@@ -52,11 +52,20 @@ videoPlayer.addEventListener('timeupdate', () => {
     currTime.innerHTML = videoTime(videoPlayer.currentTime);
 })
 
-progress.addEventListener('click', (e) => {
+const changeProgressBar = (e) => {
     const progressTime = (e.offsetX / progress.offsetWidth) * videoPlayer.duration
     videoPlayer.currentTime = progressTime
-
+}
+let mousedown = false; //При клике и удержании курсора на прогрессбаре его можно двигать
+progress.addEventListener('click', changeProgressBar);
+progress.addEventListener('mousemove', (e) => {mousedown && changeProgressBar(e)});
+progress.addEventListener('mousedown', () => {
+    mousedown = true
 })
+progress.addEventListener('mouseup', () => {
+    mousedown = false
+})
+
 
 //Скорость видео
 const videoChangeSpeed = () => {
@@ -75,7 +84,8 @@ const videoChangeVolume = () => {
         volumeBtn.classList.remove('active');
     }
 }
-videoVolume.addEventListener('change', videoChangeVolume);
+videoVolume.addEventListener('click', videoChangeVolume);
+videoVolume.addEventListener('mousemove', videoChangeVolume);
 
 const videoMute = () => {
     if(videoPlayer.volume == 0) {

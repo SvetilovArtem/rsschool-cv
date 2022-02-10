@@ -4,8 +4,8 @@
     padding: 25px 20px 20px 25px;
     margin: 50px auto;
     border-radius: 20px;
-    background-color: rgba(27, 234, 217, 0.5);
-    box-shadow: 0 0 8px 8px white inset;
+    background-color: rgba(153, 161, 161, 0.3);
+    box-shadow: 0 0 8px 8px rgb(29, 28, 28) inset;
 }
 .video-container {
     text-align: center;
@@ -23,7 +23,7 @@
     justify-content: center;
 }
 .video-controls__speed {
-    background-color: rgba(27, 234, 217, 0.5);
+    background-color: #b3b3b3;
     border-radius: 20px;
     border: transparent;
     cursor: pointer;
@@ -158,4 +158,10 @@
 .rsschool-link svg {
     width: 50px;
     height: 50px;
+}
+
+@media(max-width: 719px) {
+    .video-player {
+        width: 360px;
+    }
 }
