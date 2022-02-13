@@ -5,6 +5,7 @@ const imgPATH = 'https://image.tmdb.org/t/p/w1280'
 const main = document.querySelector('.main')
 const search = document.querySelector('.search')
 const form = document.querySelector('.form')
+const clearBtn =document.querySelector('.clearInput')
 
 showMovies(urlAPI);
 
@@ -45,4 +46,7 @@ form.addEventListener('submit', (e) => {
     if(searchTerm) {
         showMovies(searchAPI + searchTerm)
     }
+})
+clearBtn.addEventListener('click', () => {
+    search.value = ''
 })

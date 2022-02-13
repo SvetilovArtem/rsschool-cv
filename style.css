@@ -58,6 +58,22 @@ img {
     background-color: rgb(152, 158, 158);
     border: 2px solid black;
     color: black;
+    
+}
+.form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.clearInput {
+    display: inline-block;
+    position: absolute;
+    font-size: 14px;
+    right: 15px;
+    cursor: pointer;
+}
+.clearInput:hover {
+    color: red;
 }
 .description {
     padding: 10px;
